@@ -12,4 +12,5 @@ switch(fruit){
     break;
 default:console.log("None of this fruit")
 
+
 }
