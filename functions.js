@@ -61,7 +61,13 @@ function ar(){
 
 }
 function pr(){
+    qr();
     console.log("this is pr function")
+    
+}
+
+function qr(){
+    console.log("this is qr function")
     
 }
 ar();
