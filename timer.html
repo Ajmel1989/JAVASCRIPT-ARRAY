@@ -8,18 +8,32 @@
 <body>
     
 <span id="count"></span>
+<span id="count1"></span>
+
 
 
     <script>
         var i=10;
         var x= setInterval(function(){
-            document.getElementById("count").innerHTML=i;
-            i--;
             if(i==0){
                 clearInterval(x);
             }
+            document.getElementById("count").innerHTML=i;
+            i--;
+           
             
         },1000)
+
+        var j=100;
+        var y= setInterval(function(){
+            if(j==0){
+                clearInterval(y);
+            }
+            document.getElementById("count1").innerHTML=j;
+            j--;
+            
+            
+        },100)
     </script>
 </body>
 </html>
