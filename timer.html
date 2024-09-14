@@ -9,6 +9,8 @@
     
 <span id="count"></span>
 <span id="count1"></span>
+<span id="count2"></span>
+
 
 
 
@@ -22,7 +24,7 @@
             i--;
            
             
-        },1000)
+        },100)
 
         var j=100;
         var y= setInterval(function(){
@@ -33,7 +35,18 @@
             j--;
             
             
-        },1000)
+        },100)
+
+        var k=50;
+        var z= setInterval(function(){
+            if(k==0){
+                clearInterval(z);
+            }
+            document.getElementById("count2").innerHTML=k;
+            k--;
+            
+            
+        },100)
     </script>
 </body>
 </html>
