@@ -10,6 +10,8 @@
 <label id="count"></label>
 <label id="count1"></label>
 <label id="count2"></label>
+<label id="count3"></label>
+
 
 
 
@@ -45,6 +47,16 @@
             document.getElementById("count2").innerHTML=k;
             k--;
             
+            
+        },100)
+        var o=10;
+        var p= setInterval(function(){
+            if(o==0){
+                clearInterval(p);
+            }
+            document.getElementById("count3").innerHTML=o;
+            o--;
+           
             
         },100)
     </script>
