@@ -45,3 +45,21 @@ while(l<=5){
     }
     console.log(l)
 }
+
+// ========================================================================
+
+for(k=1;k<=6;k++){
+    if(k<=3){
+        continue;
+    }
+    console.log(k)
+}
+var l=1;
+while(l<=5){
+    l++;
+    if(l==2){
+        continue;
+    }
+    console.log(l)
+}
+
