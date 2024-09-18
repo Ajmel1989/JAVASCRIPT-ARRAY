@@ -12,6 +12,7 @@
     <h3 id="current-time"></h3>
 
     <script>
+        
         var timeElement=document.getElementById("current-time")
         function putzero(nm){
             return nm<10?"0"+nm:nm;
@@ -19,8 +20,8 @@
         function showTime(){
             var dt=new Date();
             var hours=dt.getHours();
-            var amorpm=hours>12?"pm":"am";
-            var dateSting=putzero(hours%12)+":"+putzero(dt.getMinutes())+" "+putzero(dt.getSeconds())+" "+amorpm;
+            var amorpm=hours>12?"PM":"AM";
+            var dateSting=putzero(hours%12)+" : "+putzero(dt.getMinutes())+" : "+putzero(dt.getSeconds())+" - "+amorpm;
             timeElement.innerHTML=dateSting;
             setTimeout(function(){
                 showTime();
