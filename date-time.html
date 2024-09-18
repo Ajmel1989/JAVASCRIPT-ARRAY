@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DATE AND TIME</h1>
+    
+
+    <h3 id="current-time"></h3>
+
+    <script>
+        var timeElement=document.getElementById("current-time")
+        function putzero(nm){
+            return nm<10?"0"+nm:nm;
+        }
+        function showTime(){
+            var dt=new Date();
+            var hours=dt.getHours();
+            var amorpm=hours>12?"pm":"am";
+            var dateSting=putzero(hours%12)+":"+putzero(dt.getMinutes())+" "+putzero(dt.getSeconds())+" "+amorpm;
+            timeElement.innerHTML=dateSting;
+            setTimeout(function(){
+                showTime();
+            },1000)
+        }
+        showTime()
+    </script>
+</body>
+</html>
